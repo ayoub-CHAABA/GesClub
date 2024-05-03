@@ -1,0 +1,15 @@
+env:
+  GIT_USER: ${{ secrets.GIT_USER }}
+  GIT_PASS: ${{ secrets.GIT_PASS }}
+steps:
+  - name: Checkout Repository
+    uses: actions/checkout@v2
+  - name: Set up Node.js
+    uses: actions/setup-node@v1
+    with:
+      node-version: '12.x'
+  - name: Deploy to GitHub Pages
+    run: |
+      npm install
+      npm run build
+      npm run deploy
