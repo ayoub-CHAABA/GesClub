@@ -1,0 +1,46 @@
+/* Basic styling for the organizational chart */
+.p-organizationchart .p-organizationchart-node-content {
+    padding: 0.5em;
+    border: 1px solid var(--surface-d);
+    border-radius: 8px;
+    background-color: var(--surface-b);
+    color: var(--text-color-secondary);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+/* Highlight node on hover */
+.p-organizationchart .p-organizationchart-node-content:hover {
+    background-color: var(--primary-color);
+    color: var(--surface-a);
+    cursor: pointer;
+}
+
+/* Styling for node labels */
+.p-organizationchart .p-organizationchart-node-content div {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+/* Connector lines style */
+.p-organizationchart .p-organizationchart-table .p-organizationchart-lines {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Adjust the vertical spacing between nodes */
+.p-organizationchart .p-organizationchart-table .p-organizationchart-nodes td {
+    padding: 20px;
+}
+
+import React from 'react';
+import { OrganizationChart } from 'primereact/organizationchart';
+import '../css/orgchart.css';  // Adjust the path as necessary
+
+const MyOrgChart = () => {
+    // Your code
+};
+
+export default MyOrgChart;
