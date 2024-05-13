@@ -1,3 +1,35 @@
+/* Hide table borders */
+.p-organizationchart table,
+.p-organizationchart tr,
+.p-organizationchart td {
+    border: none !important;
+    background-color: transparent !important;
+    padding: 10px;
+}
+
+/* Node styling */
+.p-organizationchart .p-organizationchart-node-content {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    overflow: hidden; /* Ensures content fits within the node */
+}
+
+/* Hover effect for nodes */
+.p-organizationchart .p-organizationchart-node-content:hover {
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+/* Link line styles */
+.p-organizationchart .p-organizationchart-line-down,
+.p-organizationchart .p-organizationchart-line-left,
+.p-organizationchart .p-organizationchart-line-right {
+    background-color: var(--primary-color); /* Customize your color */
+}
+
+
+/**********/
 /* Basic styling for the organizational chart */
 .p-organizationchart .p-organizationchart-node-content {
     padding: 0.5em;
