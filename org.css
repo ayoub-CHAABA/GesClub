@@ -1,3 +1,31 @@
+/* Enhancing the appearance of connector lines in the organizational chart */
+.p-organizationchart .p-organizationchart-line-down,
+.p-organizationchart .p-organizationchart-line-left,
+.p-organizationchart .p-organizationchart-line-right,
+.p-organizationchart .p-organizationchart-line-top {
+    background-color: var(--primary-color); /* Change to a preferred color */
+    width: 3px; /* Makes the line thicker */
+}
+
+/* Specific adjustments to the vertical lines if needed */
+.p-organizationchart .p-organizationchart-line-down {
+    height: 20px; /* Adjust height to make the vertical connection longer or shorter */
+}
+
+/* Specific adjustments to the horizontal lines if needed */
+.p-organizationchart .p-organizationchart-line-left,
+.p-organizationchart .p-organizationchart-line-right {
+    width: 20px; /* Adjust width to make the horizontal connection longer or shorter */
+}
+
+/* Adding dashed style to the lines if desired */
+.p-organizationchart .p-organizationchart-line-down,
+.p-organizationchart .p-organizationchart-line-left,
+.p-organizationchart .p-organizationchart-line-right,
+.p-organizationchart .p-organizationchart-line-top {
+    border-style: dashed; /* Optional: changes the line to dashed */
+}
+/******/
 /* Hide table borders */
 .p-organizationchart table,
 .p-organizationchart tr,
