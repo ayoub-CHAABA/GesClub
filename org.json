@@ -1,0 +1,26 @@
+const data = [{
+    label: 'CEO',
+    expanded: true,
+    children: [
+        {
+            label: 'CFO',
+            children: [
+                { label: 'Tax' },
+                { label: 'Legal' }
+            ]
+        },
+        {
+            label: 'CTO',
+            children: [
+                {
+                    label: 'VP of Engineering',
+                    children: [
+                        { label: 'Engineering' },
+                        { label: 'Product' }
+                    ]
+                },
+                { label: 'CTO Office' }
+            ]
+        }
+    ]
+}];
