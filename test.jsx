@@ -1,3 +1,16 @@
+const nodeTemplate = (node) => {
+    if (node.type === 'person') {
+        return (
+            <div style={{ textAlign: 'center', padding: '10px' }}>
+                <img src={node.data.avatar} alt={node.data.name} style={{ width: '70px', height: '70px', borderRadius: '50%' }} />
+                <div style={{ fontWeight: 'bold', fontSize: '16px', marginTop: '8px' }}>{node.data.name}</div>
+                <div style={{ fontSize: '12px', color: '#555' }}>{node.data.title}</div>
+            </div>
+        );
+    }
+    return <div>{node.label}</div>;
+};
+/*****/
 import React from 'react';
 import { OrganizationChart } from 'primereact/organizationchart';
 
